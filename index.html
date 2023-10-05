@@ -16,13 +16,34 @@
 		<form>
 			<section class="form-section">
 				<label for="form-name"> Skriv in ditt namn </label>
-				<input id="form-name" type="text" required value="" placeholder="Namn" />
+				<input id="form-name" type="text" value="" placeholder="Namn"
+					required
+					minlength="2"
+					maxlength="5"
+					/>
+				<p class="error-message"> Var vänlig skriv in ditt namn </p>
 			</section>
 			
 			<section class="form-section">
 				<label for="form-color"> Favoritfärg </label>
 				<input id="form-color" type="text" required value="" placeholder="Säkert blå" />
 			</section>
+
+			<section class="form-section">
+				<label for="form-speed"> Flyghastighet </label>
+				<input id="form-speed" type="number" value="" placeholder="m/s"
+					required
+					min="5"
+					max="50"
+					step="0.1"
+					/>
+			</section>
+
+			<section class="form-section">
+				<label for="form-password"> Lösenord </label>
+				<input id="form-password" type="password" required />
+			</section>
+
 
 			<section class="form-section row">
 				<button type="submit"> Spara inställningar </button>
