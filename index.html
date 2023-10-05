@@ -16,19 +16,44 @@
 		<form>
 			<section class="form-section">
 				<label for="form-name"> Skriv in ditt namn </label>
-				<input id="form-name" type="text" value="" placeholder="Namn" />
+				<input id="form-name" type="text" required value="" placeholder="Namn" />
 			</section>
 			
 			<section class="form-section">
 				<label for="form-color"> Favoritfärg </label>
-				<input id="form-color" type="text" value="" placeholder="Säkert blå" />
+				<input id="form-color" type="text" required value="" placeholder="Säkert blå" />
 			</section>
 
 			<section class="form-section row">
 				<button type="submit"> Spara inställningar </button>
 				<button type="button"> Avbryt, stäng osv. </button>
 			</section>
+
+			<section class="form-section">
+				<p> Välj din favoritfärg </p>
+				<div>
+					<input id="easy-1" type="checkbox" />
+					<label for="easy-1"> Jag tycker om blått </label>
+				</div>
+				<div>
+					<input id="easy-2" type="checkbox" />
+					<label for="easy-2"> Jag tycker om grönt </label>
+
+				</div>
+
+				<p> Välj din favoritfärg </p>
+				<div>
+					<input id="easy-3" type="radio" name="radio-1" /> 
+					<label for="easy-3"> Blått är flott </label>
+				</div>
+				<div>
+					<input id="easy-4" type="radio" name="radio-1" />
+					<label for="easy-4"> Grönt är skönt </label>
+				</div>
+
+			</section>
 		</form>
+
 
 		<!-- Button är bättre än input type="submit" i alla avseenden -->
 		<button type="button"> Very <strong>fancy</strong> button </button>
