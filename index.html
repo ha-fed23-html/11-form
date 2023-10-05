@@ -14,20 +14,25 @@
 	<main>
 
 		<form>
-			<section>
+			<section class="form-section">
 				<label for="form-name"> Skriv in ditt namn </label>
 				<input id="form-name" type="text" value="" placeholder="Namn" />
 			</section>
 			
-			<section>
+			<section class="form-section">
 				<label for="form-color"> Favoritfärg </label>
 				<input id="form-color" type="text" value="" placeholder="Säkert blå" />
 			</section>
 
-			<button type="button"> inuti </button>
+			<section class="form-section row">
+				<button type="submit"> Spara inställningar </button>
+				<button type="button"> Avbryt, stäng osv. </button>
+			</section>
 		</form>
 
-		<button type="button"> utanför </button>
+		<!-- Button är bättre än input type="submit" i alla avseenden -->
+		<button type="button"> Very <strong>fancy</strong> button </button>
+		<input type="submit" value="Very <strong>fancy</strong> input" />
 
 	</main>
 
